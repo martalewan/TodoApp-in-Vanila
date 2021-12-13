@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: ToDo</title>
+  <link rel="stylesheet" type="text/css" href="./style/todo.css">
+  <script defer src="./js/todo.js"></script>
+</head>
+
+<body>
+  <nav class="navigation">
+    <p class="logo">justDo.</p>
+  </nav>
+
+  <main class="main-wrapper">
+    <h1 class="main-wrapper__title">What would you like to do?</h1>
+    <form action="#" class="form">
+      <label for="todo-title" class="form__title">My task</label> 
+      <input id="todo-title" class="form__title-input" name="todo-title" type="text" maxlength="80" placeholder="Add the title" required/>
+      <label for="todo-description" class="form__description">Description</label> 
+      <textarea name="todo-description" class="form__description-input" maxlength="170" cols="5" rows="7" placeholder="Add the description"></textarea>
+      <div class="todo-btn-wrapper">
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+          <input type="submit" class="form__button" value="Add">
+        </div>
+      </div>
+    </form>
+
+    <section class="todo-wrapper">
+      <h1 class="todo-wrapper__title">The todos</h1>
+      <section id="todo-container" class="todo-wrapper__cards">
+      </section>
+    </section>
+
+    <section class="todo-wrapper">
+      <h1 class="todo-wrapper__title">Done</h1>
+      <section id="todo-done-container" class="todo-wrapper__cards">
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer-wrapper">
+    <p class="footer-wrapper__link">Made by <a href="https://martalewan.com/">Marta Lewan</a></p>
+    <p class="footer-wrapper__link">2021</p>
+  </footer>
+</body>
+
+</html>
